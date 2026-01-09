@@ -1,21 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const logos = [
-  '/logos/IEEE_logo.svg.png',
-  '/logos/IEEE-Xplore-logo.png',
-  '/logos/sdg.webp',
   '/logos/gu.png',
-  '/logos/IC2PCT LOGO.png',
-  '/logos/ieeegusb.png',
-  '/logos/upsection.png',
-  '/logos/iic.jpg',
-  '/logos/WIE.png',
-  '/logos/CS.png',
-  '/logos/IAS.png',
-  '/logos/ES.png'
-  // '/logos/CIS.png',
-  // '/logos/TEMS.png',
-  // '/logos/SSIT.png',
 ];
 
 export default function LogoCarousel() {

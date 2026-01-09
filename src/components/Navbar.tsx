@@ -21,17 +21,7 @@ const Navbar = () => {
         { name: "Speakers", path: "/speakers" }
       ]
     },
-    {
-      name: "Previous Conferences",
-      dropdown: [
-        { name: "2021", path: "https://ieeexplore.ieee.org/xpl/conhome/9601831/proceeding", external: true },
-        { name: "2020", path: "https://ieeexplore.ieee.org/xpl/conhome/9313012/proceeding", external: true },
-        { name: "2018", path: "https://ieeexplore.ieee.org/xpl/conhome/8776840/proceeding", external: true },
-        { name: "2017", path: "https://ieeexplore.ieee.org/xpl/conhome/8229712/proceeding", external: true },
-        { name: "2016", path: "https://ieeexplore.ieee.org/xpl/conhome/7830026/proceeding", external: true },
-        { name: "2015", path: "https://www.iccca.co.in/previous-conferences/2015/", external: true },
-      ]
-    },
+    // Previous Conferences dropdown removed as per user request to remove IEEE content
     {
       name: "Schedule",
       disabled: true,
@@ -46,25 +36,15 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-blue-900 shadow-lg sticky top-0 z-50">
+    <nav className="bg-primary shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4 flex-wrap">
           {/* Logos */}
           <div className="flex items-center space-x-2 flex-wrap max-w-full">
             <img
               src="/images/gu.jpg"
-              alt="Logo 3"
-              className="h-8 w-auto rounded-full max-w-[130px] sm:max-w-[130px] object-cover"
-            />
-            <img
-              src="/images/ic2pct.jpg"
-              alt="Logo 4"
-              className="h-8 w-auto max-w-[70px] sm:max-w-[100px] object-contain"
-            />
-            <img
-              src="/images/ieeelogo.webp"
-              alt="Logo 4"
-              className="h-8 w-auto max-w-[70px] sm:max-w-[100px] object-contain"
+              alt="Galgotias University Logo"
+              className="h-12 w-auto max-w-[200px] object-contain"
             />
           </div>
 
@@ -80,8 +60,8 @@ const Navbar = () => {
                     <button
                       disabled={item.disabled}
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center space-x-1 ${location.pathname.startsWith(item.navPathPrefix || item.name.toLowerCase().replace(' ', '-'))
-                        ? "bg-white text-blue-900"
-                        : "text-white hover:bg-blue-800"
+                        ? "bg-white text-primary"
+                        : "text-white hover:bg-green-700"
                         } ${item.disabled ? "opacity-50 cursor-not-allowed hover:bg-transparent" : ""}`}
                     >
                       <span>{item.name}</span>
@@ -106,7 +86,7 @@ const Navbar = () => {
                               key={dropdownItem.name}
                               to={dropdownItem.path}
                               className={`block px-4 py-2 text-sm transition-colors first:rounded-t-md last:rounded-b-md ${isActive(dropdownItem.path)
-                                ? "bg-blue-900 text-white"
+                                ? "bg-primary text-white"
                                 : "text-gray-700 hover:bg-gray-100"
                                 }`}
                             >
@@ -125,22 +105,21 @@ const Navbar = () => {
                   key={item.name}
                   to={item.path}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.path)
-                    ? "bg-white text-blue-900"
-                    : "text-white hover:bg-blue-800"
+                    ? "bg-white text-primary"
+                    : "text-white hover:bg-green-700"
                     }`}
                 >
                   {item.name}
                 </Link>
               );
             })}
-            <a
-              href="https://cmt3.research.microsoft.com/ICCPCT2026/Submission/Manage"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-4 px-4 py-2 rounded-full bg-white text-blue-900 font-semibold shadow hover:bg-blue-100 transition-colors border border-white"
+            {/* Submit Paper Button Disabled */}
+            <button
+              disabled
+              className="ml-4 px-4 py-2 rounded-full bg-gray-300 text-gray-500 font-semibold shadow cursor-not-allowed border border-gray-300"
             >
-              Submit Paper
-            </a>
+              Submit Paper (Coming Soon)
+            </button>
           </div>
 
           {/* Mobile menu button (always white icon) */}

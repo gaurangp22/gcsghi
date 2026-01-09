@@ -1,302 +1,164 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, MapPin, Clock, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ImageSlider from "@/components/ImageSlider";
 import UniversityMap from "@/components/UniversityMap";
 import CountdownTimer from "@/components/CountdownTimer";
 import LogoCarousel from '@/components/LogoCarousel';
 import Acknowledgement from '@/components/Acknowledgement';
+import { Leaf, MapPin, Calendar, University } from "lucide-react";
+import TracksSection from "@/components/TracksSection";
+import ImportantDates from "@/components/ImportantDates";
+import FeesSponsorship from "@/components/FeesSponsorship";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans">
       <Navbar />
 
-      {/* Image Slider */}
-      <ImageSlider />
-
-      {/* Countdown Timer */}
-      <CountdownTimer />
-
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">IC2PCT-2026</h1>
-          <h2 className="text-2xl mb-6">2026 IEEE 6th International Conference on Computing, Power, and Communication Technologies</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join us for the premier conference bringing together researchers, academicians, and industry professionals
-            to share cutting-edge research in computing and communication technologies.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <div className="flex items-center gap-2">
-              <Calendar className="h-5 w-5" />
-              <span>15-17 May, 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="h-5 w-5" />
-              <span>Galgotias University, Greater Noida</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Users className="h-5 w-5" />
-              <span>500+ Participants Expected</span>
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-gray-100">
-              <Link to="/registration">Register Now</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-blue-900 hover:bg-white hover:text-blue-900">
-              <a href="https://cmt3.research.microsoft.com/ICCPCT2026/Submission/Manage" target="_blank" rel="noopener noreferrer">Submit Paper</a>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-gradient-to-br from-green-50 to-white">
 
-      {/* Key Information Cards */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Conference Highlights</h2>
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-white shadow-lg border-0">
-              <CardHeader className="text-center pb-6">
-                <CardTitle className="text-2xl text-blue-900 flex items-center justify-center gap-3">
-                  <Calendar className="h-6 w-6" />
-                  Important Dates
-                </CardTitle>
-                <CardDescription className="text-gray-600">
-                  Mark your calendar for these key conference milestones
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
-                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-900">
-                    <h4 className="font-semibold text-blue-900 mb-2">Abstract Submission Deadline</h4>
-                    <p className="text-gray-700 text-lg">02 January 2026</p>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-600">
-                    <h4 className="font-semibold text-green-700 mb-2">Full Paper Submission Deadline</h4>
-                    <p className="text-gray-700 text-lg">31 March 2026</p>
-                  </div>
-                  <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
-                    <h4 className="font-semibold text-orange-700 mb-2">Acceptance Notification</h4>
-                    <p className="text-gray-700 text-lg">15 April 2026</p>
-                  </div>
-                  <div className="bg-teal-50 p-4 rounded-lg border-l-4 border-teal-500">
-                    <h4 className="font-semibold text-teal-700 mb-2">Registration Deadline</h4>
-                    <p className="text-gray-700 text-lg">20 April 2026</p>
-                  </div>
-                  <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-600">
-                    <h4 className="font-semibold text-purple-700 mb-2">Final Paper Submission</h4>
-                    <p className="text-gray-700 text-lg">30 April 2026</p>
-                  </div>
+        {/* Abstract Background Shapes */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 transform translate-x-20 z-0" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full filter blur-3xl z-0" />
+
+        <div className="container mx-auto px-4 z-10 relative">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8 animate-fade-in-up">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold">
+                <Leaf className="w-4 h-4" />
+                <span>Sustainable Healthcare 2026</span>
+              </div>
+
+              <h1 className="text-5xl lg:text-7xl font-bold font-heading leading-tight text-gray-900">
+                Global Conference on <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Sustainable Green Healthcare</span> Innovations
+              </h1>
+
+              <div className="flex flex-col gap-4 text-lg text-gray-600">
+                <div className="flex items-center gap-3">
+                  <Calendar className="w-6 h-6 text-primary" />
+                  <span className="font-medium">1st - 3rd May, 2026</span>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-6 h-6 text-primary" />
+                  <span className="font-medium">Galgotias University, Greater Noida, India</span>
+                </div>
+              </div>
 
-      {/* About Conference */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-gray-800">About IC2PCT-2026</h2>
-            <p className="text-lg text-gray-600 mb-6">
-              The 2026 IEEE 6th International Conference on Computing, Power, and Communication Technologies (IC2PCT-2026)
-              is a premier forum for researchers, academicians, and industry professionals to present and
-              discuss the most recent innovations, trends, and concerns in the field of computing, power, and
-              communication technologies.
-            </p>
-            <p className="text-lg text-gray-600 mb-8">
-              This conference provides an excellent opportunity for participants to learn about state-of-the-art
-              research results and to discuss emerging areas of research. It also creates a platform for
-              researchers to meet and discuss their ideas that will result in collaborative research in different areas.
-            </p>
-            <Button asChild size="lg" className="bg-blue-900 hover:bg-blue-800">
-              <Link to="/call-for-papers">Learn More</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Conference Tracks */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Conference Tracks</h2>
-          <p className="text-center text-lg text-gray-600 mb-12">
-            We welcome submissions in the following areas.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Track 1: Computing */}
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-blue-900">Track 1: Computing</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Big Data, Cloud Computing, and Quantum Computing</li>
-                  <li>• AI, AIoT, IIoT, Deep Learning, and Machine Learning</li>
-                  <li>• Cyber Security and Humanitarian Technologies</li>
-                  <li>• Blockchain Applications</li>
-                  <li>• AR, VR, and Metaverse</li>
-                  <li>• Human-Computer Interface (HCI)</li>
-                  <li>• Robotics, UAV, and Unmanned Vehicle Technologies</li>
-                  <li>• Smart Manufacturing and Industry 5.0</li>
-                  <li>• Healthcare Applications</li>
-                  <li>• Cyber Physical Systems</li>
-                  <li>• Software Engineering and Agile Development</li>
-                  <li>• Multimedia and Web Services Agents</li>
-                  <li>• Knowledge-based Systems</li>
-                  <li>• Pervasive Computing and Ambient Intelligence</li>
-                  <li>• Bioinformatics</li>
-                  <li>• Heuristic and AI Planning Strategies and Tools</li>
-                  <li>• Computational Theories of Learning</li>
-                  <li>• Recent Trends and Developments</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Track 2: Power */}
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-blue-900">Track 2: Power</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Renewable Energy Technologies Including Hydrogen</li>
-                  <li>• Renewable Energy Technologies (e.g., Solar, Wind, Hydro, Biomass)</li>
-                  <li>• Integration of Renewable Energy Sources into the Grid</li>
-                  <li>• Energy Storage Systems (e.g., Batteries, Supercapacitors, Flywheels)</li>
-                  <li>• Energy Efficiency and Conservation Strategies</li>
-                  <li>• Demand Response and Load Management</li>
-                  <li>• Modern Power Electronics, Drives and Control, Electric Vehicles</li>
-                  <li>• Electric Vehicles and Charging Infrastructure</li>
-                  <li>• Power Semiconductor Devices and Applications</li>
-                  <li>• Smart Grid Technologies and Power System Management</li>
-                  <li>• Power System Modeling and Simulation</li>
-                  <li>• Electric Power Generation and Distribution</li>
-                  <li>• Power System Optimization and Smart Metering</li>
-                  <li>• Distributed Generation and Microgrids</li>
-                  <li>• High Voltage Engineering and Insulation Systems</li>
-                  <li>• Power Quality and Reliability</li>
-                  <li>• Advanced Power System Protection and Control</li>
-                  <li>• Power System Management Technologies</li>
-                  <li>• Power System Cybersecurity</li>
-                  <li>• Artificial Intelligence for Power Systems and Smart Grid</li>
-                  <li>• Smart Cities & Technologies for Sustainable Development</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Track 3: Communication */}
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-blue-900">Track 3: Communication</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Antennas and Propagation</li>
-                  <li>• Radio Frequency and Microwave Engineering</li>
-                  <li>• Optical Communication and Fiber Optics</li>
-                  <li>• Satellite Communication Systems</li>
-                  <li>• Wireless/Radio Access Technologies</li>
-                  <li>• 5G Applications, Emerging 6G Technologies</li>
-                  <li>• Mobile Communication and Network Architecture</li>
-                  <li>• Communication Networks and Protocols</li>
-                  <li>• Ad Hoc and Sensor Networks</li>
-                  <li>• Wireless Sensor Networks</li>
-                  <li>• Machine-to-Machine (M2M) Communication</li>
-                  <li>• Multi-Access Edge Computing (MEC) and Cloud RAN</li>
-                  <li>• Signal Processing for Communications</li>
-                  <li>• Data Transmission and Coding Techniques</li>
-                  <li>• Internet of Things (IoT)</li>
-                  <li>• IoT Hardware Security</li>
-                  <li>• Healthcare and Wireless Sensor Networks</li>
-                  <li>• Network Security and Privacy</li>
-                  <li>• Communication System Design and Optimization</li>
-                  <li>• Communication in Smart Cities and Smart Grids</li>
-                  <li>• Ubiquitous Computing and Communication</li>
-                  <li>• Interference Management and Spectrum Sharing</li>
-                  <li>• Communication for Autonomous Systems and Vehicles</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative py-16 overflow-hidden">
-        {/* Background image layer with reduced opacity */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-          style={{ backgroundImage: "url('https://www.galgotiasuniversity.edu.in/public/uploads/media/ZE6Pp0UjcqM3YePbTNhicYhR1rGh2DpcnSgKbFMH.webp')", opacity: 0.3 }}
-        />
-
-        {/* Foreground content stays fully visible */}
-        <div className="relative z-10">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center justify-between">
-              {/* Text content on left */}
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-800">About Galgotias University</h2>
-                <p className="text-lg text-gray-700 mb-6">
-                  Galgotias University is a leading private university in India, established in 2011 and located in
-                  Greater Noida, Uttar Pradesh. Known for its state-of-the-art infrastructure and commitment to
-                  academic excellence, the university offers world-class education across various disciplines.
-                </p>
-                <p className="text-lg text-gray-700 mb-6">
-                  With over 20,000+ students from 50+ countries, Galgotias University has established itself as a
-                  global education hub. The university is equipped with modern laboratories, research facilities,
-                  and industry partnerships that provide students with hands-on experience and exposure to cutting-edge technologies.
-                </p>
-                <p className="text-lg text-gray-700 mb-8">
-                  The university's School of Computing Science & Engineering is particularly renowned for its
-                  research contributions in areas such as Artificial Intelligence, Machine Learning, IoT,
-                  Cybersecurity, and Data Science - making it the perfect venue for the 2026 IEEE 6th International Conference on Computing, Power, and Communication Technologies (IC2PCT-2026).
-                </p>
-                <Button asChild size="lg" className="bg-blue-900 hover:bg-blue-800">
-                  <a
-                    href="https://www.galgotiasuniversity.edu.in/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit University Website
-                  </a>
+              <div className="flex flex-wrap gap-4 pt-4">
+                <Button size="lg" className="bg-primary/50 text-white px-8 h-12 text-lg shadow-lg cursor-not-allowed" disabled>
+                  Registration (Coming Soon)
+                </Button>
+                <Button size="lg" variant="outline" className="border-primary text-gray-500 cursor-not-allowed px-8 h-12 text-lg" disabled>
+                  Submit Paper (Coming Soon)
                 </Button>
               </div>
 
-              {/* Campus image on right */}
-              <div className="order-first lg:order-last">
+              <div className="pt-8 border-t border-gray-100">
+                <p className="text-sm text-gray-500 mb-2 font-medium">Organized By</p>
+                <div className="flex items-center gap-4">
+                  <img src="/images/gu.jpg" alt="Galgotias University" className="h-12 w-auto grayscale0 opacity-100 hover:opacity-100 transition-opacity" />
+                  <div className="border-l pl-4 border-gray-300">
+                    <h4 className="font-bold text-gray-800">G-MRDC</h4>
+                    <p className="text-xs text-gray-500">Multidisciplinary Research & Dev Cell</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="relative hidden lg:block">
+              {/* Hero Image / Composition */}
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
                 <img
                   src="https://www.galgotiasuniversity.edu.in/public/uploads/media/ZE6Pp0UjcqM3YePbTNhicYhR1rGh2DpcnSgKbFMH.webp"
-                  alt="Galgotias University Campus"
-                  className="w-full h-auto rounded-lg shadow-lg"
+                  alt="Conference Venue"
+                  className="w-full h-auto object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                  <p className="text-white font-medium">Join us at the state-of-the-art campus of Galgotias University</p>
+                </div>
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Countdown Timer */}
+      <div className="relative z-20 -mt-10 mb-10">
+        <div className="container mx-auto px-4">
+          <div className="bg-white rounded-xl shadow-xl p-6 border border-gray-100">
+            <CountdownTimer />
+          </div>
+        </div>
+      </div>
+
+      {/* Important Dates */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-10 font-heading">Key Dates</h2>
+          <ImportantDates />
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h3 className="text-sm font-bold tracking-widest text-primary uppercase mb-2">Host Institution</h3>
+              <h2 className="text-3xl font-bold mb-6 font-heading">About Galgotias University</h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Galgotias University (GU), located in Uttar Pradesh, is sponsored by Smt. Shakuntala Educational and Welfare Society. The University has earned NAAC A+ accreditation with an exceptional score of 3.37/4. This esteemed recognition underscores Galgotias University's status as one of the most sought-after institutions for higher education.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Offering over 200 programs, QS has rated GU for excellence with 5 stars in Teaching, academic development, facilities, innovations, and employability.
+              </p>
+              <Button variant="link" className="text-primary p-0 h-auto font-semibold">Read More &rarr;</Button>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold tracking-widest text-secondary uppercase mb-2">Organizer</h3>
+              <h2 className="text-3xl font-bold mb-6 font-heading">About G-MRDC</h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Galgotias Multidisciplinary Research & Development Cell (G-MRDC) cultivates and fosters interdisciplinary high-impact research in partnerships with external organizations, industry partners, government agencies, and community groups to amplify the impact and outcome of research.
+              </p>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 mt-6">
+                <h4 className="font-bold text-gray-800 mb-2">About GCSGHI-2026</h4>
+                <p className="text-sm text-gray-600">
+                  The Global Conference on Sustainable Green Healthcare Innovations intends to be a pivotal event for bringing the research community, industry experts, and policymakers on the same platform, working towards advanced healthcare systems.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Tracks */}
+      <TracksSection />
 
-      <div>
+      {/* Fees & Sponsorship */}
+      <FeesSponsorship />
+
+      {/* <section className="py-12">
         <LogoCarousel />
-      </div>
+      </section> */}
 
-      {/* Acknowledgement Section */}
-      <Acknowledgement />
+      {/* Acknowledgement Section Removed */}
 
       {/* University Location Map */}
-      <section className="py-16">
-        <div className="container mx-100 px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Conference Venue</h2>
-          <p className="text-center text-lg text-gray-600 mb-8">
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-8 font-heading">Conference Venue</h2>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             Galgotias University, Plot No. 2, Sector 17-A, Yamuna Expressway, Greater Noida, Uttar Pradesh 203201, India
           </p>
-          <UniversityMap />
+          <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-green-900/20 border-4 border-gray-700">
+            <UniversityMap />
+          </div>
         </div>
       </section>
 

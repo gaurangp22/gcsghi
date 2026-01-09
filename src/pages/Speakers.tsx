@@ -24,7 +24,7 @@ const speakers: string[] = [
   "Dr. Haitham Abu-Rub",
   "Dr. Liudong Xing",
   "Dr. Rajeev Srivastava",
-  
+
   // "Chin Kuan Ho",
   // "Dr. Hironori Washizaki",
   // "Dr. Harivardhagini Subhadra",
@@ -46,9 +46,9 @@ export default function KeynoteSpeakers(): JSX.Element {
     <div className="min-h-screen bg-white flex flex-col">
       <Navbar />
       <main className="flex-1 flex flex-col items-center py-10 px-4 w-full">
-        <h2 className="text-center text-3xl font-bold text-blue-900 mb-2">Keynote Speakers</h2>
-        <p className="text-center text-blue-900 mb-8">
-          2025 7th International Conference on Computing, Communication and Automation
+        <h2 className="text-center text-4xl font-heading font-bold text-primary mb-2">Keynote Speakers</h2>
+        <p className="text-center text-xl text-gray-600 mb-12">
+          Global Conference on Sustainable Green Healthcare Innovations (GCSGHI-2026)
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
           {speakers.map((speakerName: string, index: number) => {
@@ -57,21 +57,25 @@ export default function KeynoteSpeakers(): JSX.Element {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 text-center shadow-lg border-2 border-blue-900"
+                className="bg-white rounded-2xl p-6 text-center shadow-lg border border-green-100 hover:shadow-xl hover:border-green-200 transition-all duration-300 group"
               >
-                <img
-                  className="w-32 h-32 mx-auto rounded-full border-4 border-blue-900 bg-blue-50 object-cover"
-                  src={speakerDetails.imgSrc || "/reshot-icon-user-ZXFJAEQURK.svg"}
-                  alt={speakerDetails.name}
-                />
-                <h3 className="text-xl font-semibold text-blue-900 mt-4">
+                <div className="relative mb-6 mx-auto w-32 h-32">
+                  <div className="absolute inset-0 bg-green-50 rounded-full transform -rotate-6 transition-transform group-hover:rotate-0"></div>
+                  <img
+                    className="w-32 h-32 mx-auto relative z-10 rounded-full border-4 border-white shadow-md object-cover"
+                    src={speakerDetails.imgSrc || "/reshot-icon-user-ZXFJAEQURK.svg"}
+                    alt={speakerDetails.name}
+                  />
+                </div>
+
+                <h3 className="text-xl font-bold text-gray-800 mt-4">
                   {speakerDetails.name}
                 </h3>
                 {speakerDetails.position && (
-                  <p className="text-blue-900 mt-2 font-medium">{speakerDetails.position}</p>
+                  <p className="text-primary font-semibold mt-2 text-sm uppercase tracking-wide">{speakerDetails.position}</p>
                 )}
                 {speakerDetails.organization && (
-                  <p className="text-gray-500 text-sm">{speakerDetails.organization}</p>
+                  <p className="text-gray-500 text-sm mt-1">{speakerDetails.organization}</p>
                 )}
               </div>
             );

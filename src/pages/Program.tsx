@@ -35,18 +35,18 @@ const Program = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      
+
       <div className="bg-blue-900 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Conference Program</h1>
-          <p className="text-xl">Detailed schedule for 2026 IEEE 6th International Conference on Computing, Power, and Communication Technologies (IC2PCT-2026) (15-17 May)</p>
+          <p className="text-xl">Detailed schedule for Global Conference on Sustainable Green Healthcare Innovations (GCSGHI-2026) (1st-3rd May)</p>
         </div>
       </div>
 
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            
+
             <Tabs defaultValue="day1" className="w-full">
               <TabsList className="grid w-full grid-cols-3">
                 <TabsTrigger value="day1">Day 1 - May 15</TabsTrigger>

@@ -6,6 +6,30 @@ export const cards = [
     "imgSrc": "/ImportantPersons/suneelSir.png"
   },
   {
+    "name": "Prof. Kuldeep Saxena",
+    "position": "Chairperson",
+    "organization": "Galgotias University, Greater Noida, India",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Joey Santos",
+    "position": "International Chairperson",
+    "organization": "UBD Brunei",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Anand P S Gaur",
+    "position": "Organizing Committee",
+    "organization": "Galgotias University, India",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Din Bandhu",
+    "position": "Organizing Committee",
+    "organization": "Galgotias University, India",
+    "imgSrc": null
+  },
+  {
     "name": "Dr. Dhruv Galgotia",
     "position": "CEO",
     "organization": "CEO, Galgotias University, Greater Noida, India",
@@ -24,32 +48,32 @@ export const cards = [
     "imgSrc": "/ImportantPersons/snsingh.png"
   },
   {
-    "name": "Dr. Ankush Mittal",
-    "position": "Vice Chancellor",
+    "name": "Prof. (Dr.) Anshul Mittal",
+    "position": "Hon'ble Vice Chancellor",
     "organization": "Galgotias University, Greater Noida, India",
     "imgSrc": "/ImportantPersons/Ankush.webp"
   },
   {
     "name": "Prof. (Dr.) Avadhesh Kumar",
     "position": "Pro-Vice Chancellor",
-    "organization": "Galgotias University, Greater Noida, India (Vice Chair, IEEE UP Section)",
+    "organization": "Galgotias University, Greater Noida, India",
     "imgSrc": "/ImportantPersons/avadhesh.png"
   },
   {
     "name": "Prof. (Dr.) Yogesh S. Chauhan",
     "position": "Professor, IIT Kanpur",
-    "organization": "IIT Kanpur, India (Chair, IEEE UP Section)",
+    "organization": "IIT Kanpur, India",
     "imgSrc": "/ImportantPersons/yogesh.png"
   },
   {
     "name": "Prof. (Dr.) Akshay Rathore",
-    "position": "Professor- SIT, Singapore/ IEEE Fellow",
+    "position": "Professor- SIT, Singapore",
     "organization": "Singapore Institute of Technology, Singapore",
     "imgSrc": "/ImportantPersons/akshayrathore.png"
   },
   {
     "name": "Dr. Arnold Pears",
-    "position": "IEEE Education Society President",
+    "position": "Professor",
     "organization": "KTH Royal Institute of Technology, Sweden",
     "imgSrc": "/ImportantPersons/ap.jpg"
   },
@@ -260,7 +284,7 @@ export const cards = [
   {
     "name": "Prof. (Dr.) Harivardhagini Subhadra",
     "position": "",
-    "organization": "Professor, CVR College of Engineering, Hyderabad, India (IEEE WIE Committee Member)",
+    "organization": "Professor, CVR College of Engineering, Hyderabad, India",
     "imgSrc": "/ImportantPersons/harivardhagini.jpeg"
   },
   {
@@ -295,8 +319,8 @@ export const cards = [
   },
   {
     "name": "Mr. Gaurang Pant",
-    "position": "Chair IEEE CS GU",
-    "organization": "Chair IEEE CS GU, Galgotias University, India",
+    "position": "Chair CS GU",
+    "organization": "Chair CS GU, Galgotias University, India",
     "imgSrc": "/ImportantPersons/gaurang.jpg"
   },
   {
@@ -739,43 +763,43 @@ export const cards = [
   },
   {
     "name": "Dr. Sri Niwas Singh",
-    "position": "Director-IIITM Gwalior/ IEEE Fellow",
+    "position": "Director-IIITM Gwalior",
     "organization": "",
     "imgSrc": "/ImportantPersons/snsingh.png"
   },
   {
     "name": "Dr. J. Ramkumar",
-    "position": "Dean (Planning)- IIT Kanpur/ IEEE Fellow",
+    "position": "Dean (Planning)- IIT Kanpur",
     "organization": "",
     "imgSrc": "/ImportantPersons/ramkumar.jpg"
   },
   {
     "name": "Dr. Rajeev Kumar Singh",
-    "position": "Professor-IIT BHU/Secreatary-IEEE UP Section",
+    "position": "Professor-IIT BHU",
     "organization": "",
     "imgSrc": "/ImportantPersons/rajeev.jpg"
   },
   {
     "name": "Dr. Varun Kakar",
-    "position": "Joint Secreatary-IEEE UP Section",
+    "position": "Joint Secretary",
     "organization": "",
     "imgSrc": "/ImportantPersons/varunkakar.jpg"
   },
   {
     "name": "Dr. Mohammad Rihan",
-    "position": "Director- NISE, Gurugram/ Chair Elect-IEEE UP Section",
+    "position": "Director- NISE, Gurugram",
     "organization": "",
     "imgSrc": "/ImportantPersons/mohammadrihan.jpg"
   },
   {
     "name": "Dr Bijaya Ketan Panigrahi",
-    "position": "Professor, IIT Delhi/ IEEE Fellow",
+    "position": "Professor, IIT Delhi",
     "organization": "",
     "imgSrc": "/ImportantPersons/bpanigrahi.jpeg"
   },
   {
-    "name": "Ayman EL-Refaie- Ph.D., FIEEE, FIET, FNAI",
-    "position": "2025-26 IEEE IAS President",
+    "name": "Dr. Ayman EL-Refaie",
+    "position": "Professor",
     "organization": "",
     "imgSrc": "/ImportantPersons/era.jpg"
   },
@@ -793,14 +817,14 @@ export const cards = [
   },
   {
     "name": "Dr. Hironori Washizaki",
-    "position": "2025-26 IEEE Computer Society President",
+    "position": "Professor",
     "organization": "Professor, Waseda University, Tokyo",
     "imgSrc": "/ImportantPersons/hironori.png"
   },
   {
     "name": "Dr. Supavadee Aramvith",
     "position": "Associate Professor Department of Electrical Engineering",
-    "organization": "Chair Elect, IEEE New Initiatives Committee",
+    "organization": "Associate Professor",
     "imgSrc": "/ImportantPersons/supavadee.jpeg"
   },
   {
@@ -967,7 +991,7 @@ export const cards = [
   },
   {
     "name": "Prof. Priya Matta",
-    "position": "SM-IEEE, Department of CSE",
+    "position": "Department of CSE",
     "organization": "Tula's Institute, Dehradun, India",
     "imgSrc": "/ImportantPersons/Prof. Priya Matta.jpg"
   },
@@ -997,13 +1021,13 @@ export const cards = [
   },
   {
     "name": "Dr. Hironori Washizaki",
-    "position": "2025-26 IEEE Computer Society President",
+    "position": "Professor",
     "organization": "Professor, Waseda University, Tokyo",
     "imgSrc": "/ImportantPersons/hironori.png"
   },
   {
-    "name": "Dr. Ayman EL-Refaie ,Ph.D, FIEEE, FIET, FNAI",
-    "position": "2025-26 IEEE IAS President",
+    "name": "Dr. Ayman EL-Refaie",
+    "position": "Werner Endowed Chair",
     "organization": "Werner Endowed Chair in Secure and Sustainable Energy, Marquette University, USA",
     "imgSrc": "/ImportantPersons/era.jpg"
   },
@@ -1070,13 +1094,13 @@ export const cards = [
   {
     "name": "Dr. Mohammad Rihan",
     "position": "Director NISC Gurugram",
-    "organization": "Chair Elect, IEEE UP Section",
+    "organization": "Director NISC Gurugram",
     "imgSrc": "/ImportantPersons/mohammadrihan.jpg"
   },
   {
     "name": "Dr. Rajeev Kumar Singh",
     "position": "Professor, IIT BHU ",
-    "organization": "Secretary, IEEE UP Section",
+    "organization": "Professor, IIT BHU",
     "imgSrc": "/ImportantPersons/rajeev.jpg"
   },
   {
@@ -1094,7 +1118,7 @@ export const cards = [
   {
     "name": "Dr. Varun Kakar",
     "position": "Professor, BTKIT Dwarahat",
-    "organization": "Joint Secretary, IEEE UP Section",
+    "organization": "Professor, BTKIT Dwarahat",
     "imgSrc": "/ImportantPersons/varunkakar.jpg"
   },
   {
@@ -1106,13 +1130,5 @@ export const cards = [
 ];
 
 export const sponsors = [
-  { name: 'Sponsor 1', logo: '/Sponser Logos/ieee.png' },
-  { name: 'Sponsor 2', logo: '/Sponser Logos/Goals.png' },
-  { name: 'Sponsor 3', logo: '/Sponser Logos/ieeeXplore.png' },
-  // { name: 'Sponsor 4', logo: '/Sponser Logos/wie.png' },
-  { name: 'Sponsor 5', logo: '/Sponser Logos/innovative.png' },
-  { name: 'IAS', logo: '/Sponser Logos/ias.png' },
-  // { name: 'IES', logo: '/Sponser Logos/ieee-ies.png' },
-  // { name: 'PES', logo: '/Sponser Logos/ieee-pes.png' },
-  // { name: 'PELS', logo: '/Sponser Logos/pels.png' }
+  // { name: 'Sponsor 1', logo: '/Sponser Logos/ieee.png' },
 ];

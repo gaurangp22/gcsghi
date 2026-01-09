@@ -25,12 +25,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: 'hsl(142, 76%, 36%)', // Emerald 600
+					foreground: 'hsl(0, 0%, 100%)'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: 'hsl(199, 89%, 48%)', // Sky 500
+					foreground: 'hsl(0, 0%, 100%)'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -41,8 +41,8 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: 'hsl(160, 84%, 39%)', // Teal 600
+					foreground: 'hsl(0, 0%, 100%)'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -61,8 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // Custom branding colors
+        brand: {
+          green: 'hsl(142, 76%, 36%)',
+          lightGreen: 'hsl(142, 72%, 86%)',
+          blue: 'hsl(201, 96%, 32%)',
+          dark: 'hsl(222, 47%, 11%)',
+        }
 			},
+      fontFamily: {
+        sans: ["Outfit", "Inter", "sans-serif"],
+        heading: ["Outfit", "sans-serif"],
+      },
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

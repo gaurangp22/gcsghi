@@ -18,8 +18,8 @@ const Page: React.FC = () => {
                   <th className="p-3 border border-blue-900">Presentation Mode</th>
                   <th className="p-3 border border-blue-900">Registration Type</th>
                   <th className="p-3 border border-blue-900">Country</th>
-                  <th className="p-3 border border-blue-900">IEEE Member</th>
-                  <th className="p-3 border border-blue-900">Non-IEEE Member</th>
+                  <th className="p-3 border border-blue-900">Member</th>
+                  <th className="p-3 border border-blue-900">Non-Member</th>
                 </tr>
               </thead>
               <tbody className="text-blue-900">
@@ -83,35 +83,7 @@ const Page: React.FC = () => {
         </div>
 
         {/* Account details section with responsive adjustments */}
-        <div className="w-full max-w-md bg-white shadow-md rounded-lg overflow-hidden mb-8">
-          <h2 className="text-lg font-semibold text-blue-900 p-4 bg-blue-50">Account Details</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <tbody className="text-blue-900">
-                <tr className="border-b border-blue-900">
-                  <td className="p-3 font-bold border-r border-blue-900">Name of Account</td>
-                  <td className="p-3">GU Conferences</td>
-                </tr>
-                <tr className="border-b border-blue-900 bg-blue-50">
-                  <td className="p-3 font-bold border-r border-blue-900">Account Number</td>
-                  <td className="p-3">6717000100025845</td>
-                </tr>
-                <tr className="border-b border-blue-900">
-                  <td className="p-3 font-bold border-r border-blue-900">IFSC Code</td>
-                  <td className="p-3">PUNB0671700</td>
-                </tr>
-                <tr className="border-b border-blue-900 bg-blue-50">
-                  <td className="p-3 font-bold border-r border-blue-900">Bank Name</td>
-                  <td className="p-3">Punjab National Bank, Noida</td>
-                </tr>
-                <tr>
-                  <td className="p-3 font-bold border-r border-blue-900">SWIFT Code</td>
-                  <td className="p-3">PUNBINBBMSN</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        {/* Account Details removed as per user request */}
 
         {/* Added scroll indicator for mobile users */}
         <div className="md:hidden w-full max-w-6xl mt-4 text-center text-gray-500 text-sm flex items-center justify-center">
