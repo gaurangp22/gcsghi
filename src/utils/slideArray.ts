@@ -12,21 +12,141 @@ export const cards = [
     "imgSrc": null
   },
   {
-    "name": "Prof. Joey Santos",
+    "name": "Prof. Jose Santos",
     "position": "International Chairperson",
     "organization": "UBD Brunei",
     "imgSrc": null
   },
   {
     "name": "Dr. Anand P S Gaur",
-    "position": "Organizing Committee",
+    "position": "Assistant Professor",
     "organization": "Galgotias University, India",
     "imgSrc": null
   },
   {
     "name": "Dr. Din Bandhu",
-    "position": "Organizing Committee",
+    "position": "Associate Professor",
     "organization": "Galgotias University, India",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Hargovind Soni",
+    "position": "Assistant Professor",
+    "organization": "Galgotias University, India",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Rashi Tyagi",
+    "position": "Assistant Professor",
+    "organization": "Galgotias University, India",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Chingakham Chinglenthoiba",
+    "position": "Assistant Professor",
+    "organization": "Galgotias University, India",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Chithirai Pon Selvan",
+    "position": "Professor",
+    "organization": "Curtin University, Dubai",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Tong Woei Yenn",
+    "position": "Professor",
+    "organization": "University of Kuala Lumpur",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Tran Le Lu",
+    "position": "Professor",
+    "organization": "Vietnamese-German University",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Praveen Kumar",
+    "position": "Professor",
+    "organization": "University of Ljubljana",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Sabiqah Tuan Anuar",
+    "position": "Associate Professor",
+    "organization": "Universiti Malaysia Terengganu",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Malgorzata Kot (Sowinska)",
+    "position": "Professor",
+    "organization": "BTU Cottbus-Senftenberg",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Yogendra Kumar Mishra",
+    "position": "Professor",
+    "organization": "Sønderborg",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Dhiren Pradhan",
+    "position": "Professor",
+    "organization": "University of Pennsylvania, USA",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. Anil Kumar",
+    "position": "FIE, C.Eng.",
+    "organization": "Delhi Technical University, Delhi",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Vijay Gautam",
+    "position": "Professor",
+    "organization": "Delhi Technical University, Delhi",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Vijay Mandal",
+    "position": "Professor",
+    "organization": "NIT Mizoram, Mizoram",
+    "imgSrc": null
+  },
+  {
+    "name": "Prof. V Sajith",
+    "position": "Professor",
+    "organization": "NIT Calicut, Kerala",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Roli Verma Srivastava",
+    "position": "Professor",
+    "organization": "Delhi University, Delhi",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Akhtar Khan",
+    "position": "Professor",
+    "organization": "IIITDM, Kurnool, Telangana",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. J Nagendra",
+    "position": "Professor",
+    "organization": "Dayanand Sagar College of Engineering, Bangalore",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Alok Bhaduaria",
+    "position": "Professor",
+    "organization": "Manipal University of Higher Education, Karnataka, Bangalore",
+    "imgSrc": null
+  },
+  {
+    "name": "Dr. Jitendra Katiyar",
+    "position": "Professor",
+    "organization": "Manipal University of Higher Education, Mangalore, Karnataka",
     "imgSrc": null
   },
   {
@@ -49,7 +169,7 @@ export const cards = [
   },
   {
     "name": "Prof. (Dr.) Anshul Mittal",
-    "position": "Hon'ble Vice Chancellor",
+    "position": "Vice Chancellor",
     "organization": "Galgotias University, Greater Noida, India",
     "imgSrc": "/ImportantPersons/Ankush.webp"
   },

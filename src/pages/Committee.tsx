@@ -147,10 +147,10 @@ const formatAffiliation = (organization: string | undefined, position: string | 
 
 export default function TeamPage() {
   const roles = {
-    "Chief Patron": [
+    "Patron": [
       "Shri Suneel Galgotia"
     ],
-    "Patron": [
+    "Co-Patron": [
       "Dr. Dhruv Galgotia",
       "Prof. (Dr.) Anshul Mittal",
       "Ms. Aradhana Galgotia"
@@ -161,19 +161,38 @@ export default function TeamPage() {
     "Chairperson": [
       "Prof. Kuldeep Saxena"
     ],
-    "International Chairperson": [
-      "Prof. Joey Santos"
+    "Convener": [
+      "Dr. Anand P S Gaur"
     ],
-    "Conference Organizing Committee": [
-      "Dr. Anand P S Gaur",
-      "Dr. Din Bandhu"
+    "Co-Convener": [
+      "Dr. Din Bandhu",
+      "Dr. Hargovind Soni",
+      "Dr. Rashi Tyagi",
+      "Dr. Chingakham Chinglenthoiba"
+    ],
+    "International Chairperson": [
+      "Prof. Jose Santos"
     ],
     "International Advisory Member": [
-      "Prof. (Dr.) Sanjeev K. Singh", // Keeping existing members as advisory
-      "Prof. (Dr.) Jagjit Singh Dhatterwal",
-      "Dr. Liudong Xing",
-      "Dr. LING Tok Wang",
-      "Dr. Norjihan Abdul Ghani"
+      "Prof. Chithirai Pon Selvan",
+      "Prof. Tong Woei Yenn",
+      "Prof. Tran Le Lu",
+      "Prof. Praveen Kumar",
+      "Prof. Sabiqah Tuan Anuar",
+      "Prof. Malgorzata Kot (Sowinska)",
+      "Prof. Yogendra Kumar Mishra",
+      "Dr. Dhiren Pradhan"
+    ],
+    "National Advisory Member": [
+      "Prof. Anil Kumar",
+      "Dr. Vijay Gautam",
+      "Dr. Vijay Mandal",
+      "Prof. V Sajith",
+      "Dr. Roli Verma Srivastava",
+      "Dr. Akhtar Khan",
+      "Dr. J Nagendra",
+      "Dr. Alok Bhaduaria",
+      "Dr. Jitendra Katiyar"
     ]
   };
 
