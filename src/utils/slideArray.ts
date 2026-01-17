@@ -9,19 +9,19 @@ export const cards = [
     "name": "Prof. Kuldeep Saxena",
     "position": "Chairperson",
     "organization": "Galgotias University, Greater Noida, India",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/kuldeepsaxena.jpg"
   },
   {
     "name": "Prof. Jose Santos",
     "position": "International Chairperson",
     "organization": "UBD Brunei",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/josesantos.jpg"
   },
   {
     "name": "Dr. Anand P S Gaur",
     "position": "Assistant Professor",
     "organization": "Galgotias University, India",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/anandpsgaur.jpg"
   },
   {
     "name": "Dr. Din Bandhu",
@@ -39,19 +39,19 @@ export const cards = [
     "name": "Dr. Rashi Tyagi",
     "position": "Assistant Professor",
     "organization": "Galgotias University, India",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/rashityagi.jpg"
   },
   {
     "name": "Dr. Chingakham Chinglenthoiba",
     "position": "Assistant Professor",
     "organization": "Galgotias University, India",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/chingakham.jpg"
   },
   {
     "name": "Prof. Chithirai Pon Selvan",
     "position": "Professor",
     "organization": "Curtin University, Dubai",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/ponselvan.jpg"
   },
   {
     "name": "Prof. Tong Woei Yenn",
@@ -69,7 +69,7 @@ export const cards = [
     "name": "Prof. Praveen Kumar",
     "position": "Professor",
     "organization": "University of Ljubljana",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/praveeenkumar.jpg"
   },
   {
     "name": "Prof. Sabiqah Tuan Anuar",
@@ -87,67 +87,67 @@ export const cards = [
     "name": "Prof. Yogendra Kumar Mishra",
     "position": "Professor",
     "organization": "Sønderborg",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/yogendrakmishra.jpg"
   },
   {
     "name": "Dr. Dhiren Pradhan",
     "position": "Professor",
     "organization": "University of Pennsylvania, USA",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/dhirenkpradhan.jpg"
   },
   {
     "name": "Prof. Anil Kumar",
     "position": "FIE, C.Eng.",
     "organization": "Delhi Technical University, Delhi",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/anilkumar.jpg"
   },
   {
     "name": "Dr. Vijay Gautam",
     "position": "Professor",
     "organization": "Delhi Technical University, Delhi",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/vijaygautam.jpg"
   },
   {
     "name": "Dr. Vijay Mandal",
     "position": "Professor",
     "organization": "NIT Mizoram, Mizoram",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/vijaymondal.jpg"
   },
   {
     "name": "Prof. V Sajith",
     "position": "Professor",
     "organization": "NIT Calicut, Kerala",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/vsajith.png"
   },
   {
     "name": "Dr. Roli Verma Srivastava",
     "position": "Professor",
     "organization": "Delhi University, Delhi",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/roliverma.jpg"
   },
   {
     "name": "Dr. Akhtar Khan",
     "position": "Professor",
     "organization": "IIITDM, Kurnool, Telangana",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/akhtarkhan.jpg"
   },
   {
     "name": "Dr. J Nagendra",
     "position": "Professor",
     "organization": "Dayanand Sagar College of Engineering, Bangalore",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/nagendrajayaram.jpg"
   },
   {
     "name": "Dr. Alok Bhaduaria",
     "position": "Professor",
     "organization": "Manipal University of Higher Education, Karnataka, Bangalore",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/alokbhadauria.jpg"
   },
   {
     "name": "Dr. Jitendra Katiyar",
     "position": "Professor",
     "organization": "Manipal University of Higher Education, Mangalore, Karnataka",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/jitendrakatiyar.jpg"
   },
   {
     "name": "Dr. Dhruv Galgotia",
