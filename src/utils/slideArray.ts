@@ -27,13 +27,13 @@ export const cards = [
     "name": "Dr. Din Bandhu",
     "position": "Associate Professor",
     "organization": "Galgotias University, India",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/dinbandhu.jpeg"
   },
   {
     "name": "Dr. Hargovind Soni",
     "position": "Assistant Professor",
     "organization": "Galgotias University, India",
-    "imgSrc": null
+    "imgSrc": "/ImportantPersons/hargovindsoni.jpeg"
   },
   {
     "name": "Dr. Rashi Tyagi",
