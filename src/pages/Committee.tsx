@@ -161,8 +161,8 @@ export default function TeamPage() {
     "Chairperson": [
       "Prof. Kuldeep Saxena"
     ],
-    "Convener": [],
-    "Co-Convener": [
+    "Organisers": [
+      "Dr. Anand P S Gaur",
       "Dr. Din Bandhu",
       "Dr. Hargovind Soni",
       "Dr. Rashi Tyagi",
